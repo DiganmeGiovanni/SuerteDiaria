@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <TextView
+        android:id="@+id/numSuerteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:textSize="15sp"
+        android:text="Prueba suerte con un numero" />
+
+    <EditText
+        android:id="@+id/numSuerte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/numSuerteText"
+        android:hint="Escribe tu numero de la suerte" >
+        <requestFocus />
+    </EditText>
+    
+    <Button
+        android:id="@+id/probarNumB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numSuerte"
+        android:layout_centerHorizontal="true"
+        android:onClick="probarNumero"
+        android:textSize="15sp"
+        android:text="Probar con este numero"
+    />
+    
+    <Button
+        android:id="@+id/fechaNacimientoB"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="lanzarSuerteBirthday"
+        android:text="Probar la suerte de tu fecha de nacimiento"
+        android:textSize="23sp" />
+    
+</RelativeLayout>
